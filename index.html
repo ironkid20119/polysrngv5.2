@@ -4221,7 +4221,7 @@
                     toastNotificationsEnabled,
                     gameStartTime: gameStartTime || Date.now()
                 };
-                localStorage.setItem('polys-rng-save2', JSON.stringify(saveData));
+                localStorage.setItem('polys-rng-savev5', JSON.stringify(saveData));
             } catch (error) {
                 console.error('failed to save game:', error);
             }
@@ -4229,7 +4229,7 @@
 
         function loadGame() {
             try {
-                const result = localStorage.getItem('polys-rng-save2');
+                const result = localStorage.getItem('polys-rng-savev5');
                 if (result) {
                     const saveData = JSON.parse(result);
                     
