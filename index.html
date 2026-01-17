@@ -2083,7 +2083,7 @@
 
         function calculateRNG() {
             const luck = luckLevel * 0.5 + getTotalEnchantLuck();
-            let rng = Math.random() ** (-1.3 - (luck * 0.1));
+            let rng = Math.random() ** (-1.3 - (luck * 0.01));
             
             // Apply Ultimatiplier chance
             if (ultimatiplierLevel > 0) {
